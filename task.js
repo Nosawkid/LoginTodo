@@ -6,10 +6,10 @@ const taskArray = [];
 const checkCompletedTasks = () => {
   return new Promise((resolve, reject) => {
     if (completedTasks >= 5) {
-      resolve();
       const para = document.getElementById("congragulation-para");
       para.classList.remove("d-none");
       para.textContent = `Congragulations, you have completed ${completedTasks} tasks...`;
+      resolve();
     }
   });
 };
